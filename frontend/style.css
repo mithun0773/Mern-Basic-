@@ -1,0 +1,101 @@
+/* style.css */
+
+/* --- General Styling & Layout --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#auth, #create, #list-container { /* Wrap list in a container for styling */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- Form Elements (Inputs & Buttons) --- */
+input[type="text"], 
+input[type="password"], 
+input[type="number"], 
+#auth input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#auth button {
+    /* Styles specific to auth buttons */
+    margin-right: 5px;
+}
+
+/* --- Message and Status --- */
+#me {
+    margin-top: 15px;
+    font-style: italic;
+    color: #28a745; /* Success green for status */
+    font-weight: 500;
+}
+
+/* --- Product List --- */
+#list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+#list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+#list li:hover {
+    background-color: #f0f0f0;
+}
